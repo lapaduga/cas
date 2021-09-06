@@ -85,3 +85,145 @@ h6 {
   font-size: inherit;
   font-weight: 700;
 }
+
+.main {
+  padding: 90px 0px 30px 0px;
+}
+
+.main__section {
+  padding: 30px;
+  margin: 0 auto;
+  min-height: 60vh;
+}
+
+.main__section:nth-of-type(n+1) {
+  background: #b8afc9;
+}
+
+.main__section:nth-of-type(n+2) {
+  background: #02a0da;
+}
+
+.main__section:nth-of-type(n+3) {
+  background: #eadbd7;
+}
+
+.main__title {
+  margin: 0 0 20px 0;
+  font-size: 30px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.main__text {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.main__subtitle {
+  word-wrap: break-word;
+  margin: 0 0 20px 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+}
+
+.header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 70px;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__image {
+  height: 60px;
+  width: 60px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60px;
+          flex: 0 0 60px;
+  border-radius: 50%;
+  background: #610099;
+  overflow: hidden;
+}
+
+.header__image img {
+  max-width: 100%;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__list > li {
+  padding: 10px 0;
+  position: relative;
+  margin: 0 0 0 20px;
+}
+
+body {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  padding: 0 20px;
+}
+
+.wrapper {
+  min-height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+footer {
+  background: #000;
+  height: 50px;
+}

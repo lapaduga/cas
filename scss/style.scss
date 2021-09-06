@@ -1,1 +1,30 @@
 @import "_nullstyle";
+@import "_main";
+@import "_header";
+
+// Common classes
+body{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	padding: 0 20px;
+}
+.wrapper{
+	min-height: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+	border-right: 1px solid rgba(0,0,0,0.1);
+	border-left: 1px solid rgba(0,0,0,0.1);
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	padding: 0 20px;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+main{
+	flex: 1 1 auto;
+}
+footer{
+	background: #000;
+	height: 50px;
+}

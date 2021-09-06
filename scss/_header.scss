@@ -1,0 +1,65 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	background: #fff;
+	&__container {
+	}
+
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 70px;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__image{
+		height: 60px;
+		width: 60px;
+		flex: 0 0 60px;
+		border-radius: 50%;
+		background: rgb(97, 0, 153);
+		overflow: hidden;
+		img{
+			max-width: 100%;
+		}
+	}
+
+	&__menu {
+	}
+}
+.menu {
+
+	&__icon {
+	}
+
+	&__body {
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		& > li{
+			padding: 10px 0;
+			position: relative;
+			margin: 0 0 0 20px;
+		}
+	}
+
+	&__link {
+	}
+
+	&__sub-list {
+	}
+
+	&__sub-link {
+	}
+}
