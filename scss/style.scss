@@ -1,11 +1,51 @@
 @import "_nullstyle";
 @import "_main";
 @import "_header";
+@import "_cassiopeia";
 
 // Common classes
 body{
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	padding: 0 20px;
+	color: #333;
+	&._pc{
+		.menu__list{
+			& > li{
+				&:hover{
+					.menu__sub-list{
+						opacity: 1;
+						visibility: visible;
+						transform: translate(0,0);
+						pointer-events: all;
+					}
+				}
+			}
+		}
+	}
+	&._touch{
+		.menu__list{
+			& > li{
+				display: flex;
+				align-items: center;
+			}
+		}
+		.menu__link{
+			opacity: 1;
+		}
+		.menu__sub-link{
+			opacity: 1;
+			flex: 1 1 auto;
+		}
+		.menu__arrow{
+			margin: 0px 0px 0px 5px;
+			display: block;
+			width: 0;
+			height: 0;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-top: 5px solid #fff;
+		}
+	}
 }
 .wrapper{
 	min-height: 100%;
