@@ -2,6 +2,7 @@
 @import "_main";
 @import "_header";
 @import "_cassiopeia";
+@import "_footer";
 
 // Common classes
 body {
@@ -88,8 +89,4 @@ body {
 }
 main {
 	flex: 1 1 auto;
-}
-footer {
-	background: #000;
-	height: 50px;
 }

@@ -87,7 +87,7 @@ h6 {
 }
 
 .main {
-  padding: 90px 0px 30px 0px;
+  padding: 90px 0px 50px 0px;
 }
 
 .main__section {
@@ -523,7 +523,7 @@ h6 {
     left: -101%;
     width: 101vw;
     height: 100vh;
-    background: rgba(32, 32, 32, 0.98);
+    background: rgba(33, 33, 33, 0.98);
     padding: 100px 30px 40px 30px;
     -webkit-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
@@ -793,6 +793,200 @@ h6 {
   content: "\e90a";
 }
 
+.footer {
+  border-top: 1px solid #333;
+}
+
+.footer__top {
+  padding: 20px 0;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  margin: 0 -10px;
+}
+
+.footer__link {
+  color: #333;
+  line-height: 130%;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+
+@media (any-hover: hover) {
+  .footer__link:hover {
+    opacity: 0.6;
+  }
+}
+
+.footer__bottom {
+  padding: 20px 0 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer__logo {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  line-height: 130%;
+  color: #333;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.footer__logo span {
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
+@media (any-hover: hover) {
+  .footer__logo:hover span {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer__logo {
+    font-size: 22px;
+  }
+}
+
+.footer__image {
+  height: 60px;
+  width: 60px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60px;
+          flex: 0 0 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.footer__image img {
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .footer__image {
+    height: 40px;
+    width: 40px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40px;
+            flex: 0 0 40px;
+  }
+}
+
+.footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+}
+
+.footer__social {
+  padding: 5px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 40px;
+  display: block;
+  background: #fff;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+
+@media (any-hover: hover) {
+  .footer__social:hover {
+    opacity: 0.6;
+  }
+}
+
+.footer__social img {
+  max-width: 100%;
+}
+
+.footer__privacy {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  text-align: right;
+  color: #333;
+  line-height: 130%;
+  font-size: 16px;
+}
+
+.footer__privacy a {
+  text-decoration: underline;
+  color: #333;
+}
+
+@media (any-hover: hover) {
+  .footer__privacy a:hover {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer__privacy {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__privacy {
+    text-align: center;
+  }
+}
+
 body {
   font-family: "Open Sans", "Arial", sans-serif;
   padding: 0 20px;
@@ -894,9 +1088,4 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-}
-
-footer {
-  background: #000;
-  height: 50px;
 }
