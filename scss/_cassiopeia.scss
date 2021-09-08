@@ -1,61 +1,63 @@
 @font-face {
-  font-family: 'cassiopeia';
-  src:
-    url('../fonts/cassiopeia.ttf?dlzeao') format('truetype'),
-    url('../fonts/cassiopeia.woff?dlzeao') format('woff'),
-    url('../fonts/cassiopeia.svg?dlzeao#cassiopeia') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+	font-family: "cassiopeia";
+	src: url("../fonts/cassiopeia.ttf?dlzeao") format("truetype"), url("../fonts/cassiopeia.woff?dlzeao") format("woff"),
+		url("../fonts/cassiopeia.svg?dlzeao#cassiopeia") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
 }
 
-[class^="_icon-"]::before, [class*=" _icon-"]::before {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'cassiopeia' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+[class^="_icon-"]::before,
+[class*=" _icon-"]::before {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "cassiopeia" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 ._icon-tg:before {
-  content: "\e900";
+	content: "\e900";
 }
 ._icon-instagram:before {
-  content: "\e901";
+	content: "\e901";
 }
 ._icon-fb:before {
-  content: "\e902";
+	content: "\e902";
 }
 ._icon-ok:before {
-  content: "\e903";
+	content: "\e903";
 }
 ._icon-vk:before {
-  content: "\e904";
+	content: "\e904";
 }
 ._icon-youtube:before {
-  content: "\e905";
+	content: "\e905";
 }
 ._icon-pinterest:before {
-  content: "\e906";
+	content: "\e906";
 }
 ._icon-donation:before {
-  content: "\e907";
+	content: "\e907";
 }
 ._icon-radio:before {
-  content: "\e908";
-  position: relative;
-  top: -5px;
+	content: "\e908";
+	position: relative;
+	top: -5px;
+	@media (max-width: 767px) {
+		top: 0;
+	}
 }
 ._icon-phone:before {
-  content: "\e909";
+	content: "\e909";
 }
 ._icon-school:before {
-  content: "\e90a";
+	content: "\e90a";
 }

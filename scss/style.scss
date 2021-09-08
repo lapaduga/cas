@@ -4,72 +4,80 @@
 @import "_cassiopeia";
 
 // Common classes
-body{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+body {
+	font-family: "Open Sans", "Arial", sans-serif;
 	padding: 0 20px;
 	color: #333;
-	@media (max-width:1200px) {
+	&.scroll-down {
+		header {
+			transform: translate3d(-50%, -100%, 0);
+		}
+	}
+	@media (max-width: 1200px) {
 		padding: 0;
 	}
-	&._pc{
-		.menu__list{
-			& > li{
-				&:hover{
-					.menu__sub-list{
+	&._pc {
+		.menu__list {
+			& > li {
+				&:hover {
+					.menu__sub-list {
 						opacity: 1;
 						visibility: visible;
-						transform: translate(0,0);
+						transform: translate(0, 0);
 						pointer-events: all;
 					}
-					.menu__arrow{
+					.menu__arrow {
 						transform: rotate(-180deg);
 					}
 				}
 			}
 		}
 	}
-	&._touch{
-		.menu__link{
+	&._touch {
+		.menu__link {
 			opacity: 1;
 		}
-		.menu__sub-link{
+		.menu__sub-link {
 			opacity: 1;
 			flex: 1 1 auto;
 		}
-		.menu__arrow{
+		.menu__arrow {
 			border-top: 5px solid rgba(255, 255, 255, 1);
+			@media (max-width: 992px) {
+				border-top: 10px solid rgba(255, 255, 255, 1);
+			}
 		}
-		.menu__list{
-			& > li{
-				&._active{
-					.menu__sub-list{
+		.menu__list {
+			& > li {
+				&._active {
+					.menu__sub-list {
 						opacity: 1;
 						visibility: visible;
-						transform: translate(0,0);
+						transform: translate(0, 0);
 						pointer-events: all;
 					}
-					.menu__arrow{
+					.menu__arrow {
 						transform: rotate(-180deg);
 					}
 				}
 			}
 		}
 	}
-	@media (max-width:992px) {
-		&._lock{
+	@media (max-width: 992px) {
+		&._lock {
 			overflow: hidden;
 		}
 	}
 }
-.wrapper{
+.wrapper {
 	min-height: 100%;
 	max-width: 1600px;
 	margin: 0 auto;
-	border-right: 1px solid rgba(0,0,0,0.1);
-	border-left: 1px solid rgba(0,0,0,0.1);
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
 	display: flex;
 	flex-direction: column;
-	@media (max-width:1200px) {
+	@media (max-width: 1200px) {
 		border: 0;
 	}
 }
@@ -78,10 +86,10 @@ body{
 	max-width: 1500px;
 	margin: 0 auto;
 }
-main{
+main {
 	flex: 1 1 auto;
 }
-footer{
+footer {
 	background: #000;
 	height: 50px;
 }
