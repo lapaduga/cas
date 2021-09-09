@@ -309,7 +309,7 @@
 			left: 0;
 			height: 60px;
 			background: #fff;
-			z-index: 1;
+			z-index: 2;
 		}
 		&._active {
 			left: -1%;
@@ -319,7 +319,8 @@
 	&__list {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
+		flex-wrap: wrap;
 		& > li {
 			padding: 10px 0;
 			position: relative;
@@ -387,6 +388,7 @@
 		position: absolute;
 		top: 100%;
 		left: -20px;
+		z-index: 1;
 		background: #333;
 		padding: 15px 20px;
 		min-width: 200px;
