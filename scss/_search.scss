@@ -1,0 +1,50 @@
+
+.search {
+	margin: 5px;
+	&__wrap {
+		position: relative;
+	}
+
+	&__input {
+		height: 100%;
+		width: 100%;
+		padding: 12px 40px 12px 12px;
+		border: 1px solid #999999;
+		border-radius: 3px;
+		font-size: 16px;
+		color: #212121;
+		transition: border-color 0.3s ease 0s;
+		&::placeholder{
+			color: #999999;
+		}
+		&:hover,&:focus{
+			border: 1px solid #212121;
+			& + button{
+				svg{
+					fill: #212121;
+				}
+			}
+		}
+	}
+
+	&__button {
+		height: 30px;
+		width: 30px;
+		display: block;
+		position: absolute;
+		top: 9px;
+		right: 9px;
+		z-index: 1;
+		background: transparent;
+		svg{
+			fill: #999999;
+			transition: fill 0.3s ease-in-out 0s;
+		}
+		&:hover,&:focus{
+			svg{
+				fill: #212121;
+			}
+		}
+	}
+}
+

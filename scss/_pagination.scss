@@ -1,0 +1,87 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	margin: 5px;
+	&__body {
+		display: flex;
+		align-items: center;
+	}
+	&__arrow {
+		display: block;
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		border: 1px solid #999999;
+		transition: border-color 0.3s ease-in-out 0s;
+		position: relative;
+		&:after,
+		&:before {
+			content: "";
+			background: #999999;
+			height: 2px;
+			width: 14px;
+			position: absolute;
+			border-radius: 2px;
+			display: block;
+			transition: background-color 0.3s ease-in-out 0s;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				border: 1px solid #212121;
+				&:after,
+				&:before {
+					background: #212121;
+				}
+			}
+		}
+	}
+
+	&__arrow--back {
+		&:after {
+			top: 12px;
+			left: 15px;
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+		&:before {
+			top: 21px;
+			left: 15px;
+			transform: translate(-50%, -50%) rotate(45deg);
+		}
+	}
+
+	&__list {
+		margin: 0 10px;
+	}
+
+	&__page {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 130%;
+		text-align: center;
+		color: #212121;
+		padding: 10px;
+		transition: color 0.3s ease-in-out 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #999999;
+			}
+		}
+	}
+
+	&__page--active {
+		color: #999999;
+	}
+
+	&__arrow--next {
+		&:after {
+			top: 12px;
+			left: 19px;
+			transform: translate(-50%, -50%) rotate(45deg);
+		}
+		&:before {
+			top: 21px;
+			left: 19px;
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+	}
+}

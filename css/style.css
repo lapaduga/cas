@@ -86,47 +86,6 @@ h6 {
   font-weight: 700;
 }
 
-.main {
-  padding: 90px 0px 50px 0px;
-}
-
-.main__section {
-  padding: 30px;
-  margin: 0 auto;
-  min-height: 60vh;
-}
-
-.main__section:nth-of-type(n+1) {
-  background: #d6c4f7;
-}
-
-.main__section:nth-of-type(n+2) {
-  background: #61caf0;
-}
-
-.main__section:nth-of-type(n+3) {
-  background: #eadbd7;
-}
-
-.main__title {
-  margin: 0 0 20px 0;
-  font-size: 30px;
-  font-weight: 700;
-  word-wrap: break-word;
-}
-
-.main__text {
-  font-size: 16px;
-  line-height: 150%;
-}
-
-.main__subtitle {
-  word-wrap: break-word;
-  margin: 0 0 20px 0;
-  font-size: 22px;
-  font-weight: 600;
-}
-
 .appoint {
   text-align: center;
   display: -webkit-box;
@@ -990,6 +949,71 @@ h6 {
   }
 }
 
+.search {
+  margin: 5px;
+}
+
+.search__wrap {
+  position: relative;
+}
+
+.search__input {
+  height: 100%;
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: 1px solid #999999;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #212121;
+  -webkit-transition: border-color 0.3s ease 0s;
+  transition: border-color 0.3s ease 0s;
+}
+
+.search__input::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.search__input:-ms-input-placeholder {
+  color: #999999;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #999999;
+}
+
+.search__input::placeholder {
+  color: #999999;
+}
+
+.search__input:hover, .search__input:focus {
+  border: 1px solid #212121;
+}
+
+.search__input:hover + button svg, .search__input:focus + button svg {
+  fill: #212121;
+}
+
+.search__button {
+  height: 30px;
+  width: 30px;
+  display: block;
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  z-index: 1;
+  background: transparent;
+}
+
+.search__button svg {
+  fill: #999999;
+  -webkit-transition: fill 0.3s ease-in-out 0s;
+  transition: fill 0.3s ease-in-out 0s;
+}
+
+.search__button:hover svg, .search__button:focus svg {
+  fill: #212121;
+}
+
 body {
   font-family: "Open Sans", "Arial", sans-serif;
   padding: 0 20px;
@@ -1091,4 +1115,5 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  padding: 200px 0px 50px 0px;
 }
